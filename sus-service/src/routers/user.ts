@@ -100,7 +100,7 @@ const loginHandler = async (req: Login, res: Response) => {
   } else {
     res.json({
       success: false,
-      message: 'User already exists'
+      message: 'At least one of the fields is incorrect.'
     });
   }
 };
