@@ -6,15 +6,16 @@ export const taskRouter: Router = Router();
 
 interface CreateTaskRequest extends Request {
   body: {
+    userId: string,
     name: string,
     points: number
   }
 }
 
 const createTaskHandler = async (req: CreateTaskRequest, res: Response) => {
-  const { name, points } = req.body;
+  const { userId, name, points } = req.body;
 
-  const task = await createTask(name, points);
+  const task = await createTask(userId, name, points); //Ron
 
   res.json({
     success: !!task,  // evaluates truthiness of the post
