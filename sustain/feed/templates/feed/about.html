@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Bootstrap 4 Blog Template For Developers</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->  
+    {% load static %}
+  	<link rel="stylesheet" type="text/css" href="{% static 'feed/theme-1.css' %}">
+    
+
+</head> 
+
+<body>
+    
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Left</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="//codeply.com">Codeply</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"></a>
+				</li><li class="nav-item">
+					<a class="nav-link" href="../dashboard" style="color:white;">Dashboard</a>
+				</li><li class="nav-item">
+					<a class="nav-link" href="#" style="color:white;">About</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mx-auto order-0">
+			<a class="navbar-brand mx-auto" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#" style="color:white;">My Profile</a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>   <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">My Profile</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'feed/james-ryan.jpeg' %}" alt="image" >
+					
+					
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item active">
+						Jim Ryan
+
+					</li>
+					<li class="nav-item">
+						63 Points
+					</li>
+					<li class="nav-item">
+						Joined: May 30, 2020
+					</li>
+				</ul>
+				
+				
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    	    
+	    <article class="about-section py-5">
+		    <div class="container">
+			    <h2 class="title mb-3">About</h2>
+
+				<p>Here at UVA, we are driven, ambitious, and bold.
+					<br>
+					<br>
+
+					The UVA Sustainability Commission [https://sustainability.virginia.edu/about-us/plans-progress] aims to make UVA carbon neutral by 2030 and fossil fuel free by 2050. Meeting these sustainability goals to address the environmental impact of our campus requires us to be united and motivated to alter the way we pursue our education here so that it reflects our commitment to the planet.
+				</p>
+			    <figure><img class="img-fluid" src="{% static 'feed/rotunda.png' %}" alt="image"></figure>
+				<p>Image Credit: https://sustainability.virginia.edu/
+					<br>
+					<br>
+
+					The challenges of climate change require us to build a community of changemakers willing to demonstrate their commitment to the fight with action. These changemakers will lead the transition of making our lifestyles sustainable. Elevating our community will require a coordinated effort that is only possible when users like you are willingly to put in that work.
+				</p>
+
+		    </div>
+	    </article><!--//about-section-->
+
+
+    </div><!--//main-wrapper-->
+    
+
+
+    
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+    
+
+</body>
+</html> 
+

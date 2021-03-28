@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>SUS</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="SUS%20HTML%20design/favicon.ico">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'feed/theme-1.css' %}">
+	
+
+</head> 
+
+<body>
+	
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Left</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="//codeply.com">Codeply</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"></a>
+				</li><li class="nav-item">
+					<a class="nav-link" href="#" style="color:white;">Dashboard</a>
+				</li><li class="nav-item">
+					<a class="nav-link" href="../about" style="color:white;">About</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mx-auto order-0">
+			<a class="navbar-brand mx-auto" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#" style="color:white;">My Profile</a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>   <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">My Profile</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'feed/james-ryan.jpeg' %}" alt="image" >
+					
+					
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item active">
+						Jim Ryan
+					</li>
+					<li class="nav-item">
+						63 Points
+					</li>
+					<li class="nav-item">
+						Joined: May 30, 2020
+					</li>
+				</ul>
+				<div class="profile-section pt-3 pt-lg-0">
+
+				    <img class="profile-image mb-3 mx-auto" style = "height:300px;" src="{% static 'feed/vec_tree.svg' %}" alt="image" >
+
+
+			        <hr>
+				</div><!--//profile-section-->
+				
+				
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h2 class="heading">SUS - Sustainability Undertaken by Students</h2>
+			    <div class="intro">Here is your daily feed. Look at what others have been up to</div>
+			    
+		    </div><!--//container-->
+	    </section>
+		<input type="text" class="form-control" id="post" placeholder="Write a post...">
+
+	    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+			    <div class="item mb-5">
+				     <div class="media">
+					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{% static 'feed/trees.jpeg' %}" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1">I went out and planted 4 trees today!</a></h3>
+						    <div class="meta mb-1"><span class="date">March 28, 2021</span><span class="time">Robert Sheen</span><span class="comment"><a href="#">1 comment</a></span></div>
+						    <div class="intro">Look and see all of these plants!</div>
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+
+
+
+
+			    <div class="item mb-5">
+				     <div class="media">
+					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{% static 'feed/shower_head.jpeg' %}" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1">Shower time decreased by over 50% </a></h3>
+						    <div class="meta mb-1"><span class="date">March 28, 2021</span><span class="time">John Jones</span><span class="comment"><a href="#">4 comment</a></span></div>
+						    <div class="intro">By shrinking my showertime, I've been able save gallons of water each day</div>
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+
+			   <div class="item mb-5">
+				     <div class="media">
+					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{% static 'feed/etp2030.jpeg' %}" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1">Enrolled in ETP 2030: Environmental Thought and Practice </a></h3>
+						    <div class="meta mb-1"><span class="date">March 28, 2021</span><span class="time">Amy Krueller</span><span class="comment"><a href="#">3 comment</a></span></div>
+						    <div class="intro">So excited for everything that I will learn!</div>
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+
+			    <div class="item mb-5">
+				     <div class="media">
+					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{% static 'feed/laundry_bag.jpeg' %}" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1">Started using the UVA laundry bags.</a></h3>
+						    <div class="meta mb-1"><span class="date">March 28, 2021</span><span class="time">Abigail Shen</span><span class="comment"><a href="#">3 comment</a></span></div>
+						    <div class="intro">Keep the microplastics out of the ocean!!</div>
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+
+
+			    
+			    <div class="item mb-5">
+				     <div class="media">
+					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{% static 'feed/plogging.jpeg' %}" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1">I carry a trash bag anywhere I go hiking now! </a></h3>
+						    <div class="meta mb-1"><span class="date">March 28, 2021</span><span class="time">Valmik Ranjan</span><span class="comment"><a href="#">3 comment</a></span></div>
+						    <div class="intro">Picking up trash and saving the environment one step at a time. #Plogging</div>
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+
+			    
+			    <nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link rounded" href="SUS%20HTML%20design/blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				
+		    </div>
+	    </section>
+	    
+	 
+    
+    </div><!--//main-wrapper-->
+    
+
+
+
+    
+       
+    <!-- Javascript -->          
+    <script src="SUS%20HTML%20design/assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="SUS%20HTML%20design/assets/plugins/popper.min.js"></script>
+    <script src="SUS%20HTML%20design/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html> 
+
