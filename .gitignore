@@ -2,6 +2,7 @@ earth-client
 tables.txt
 *.sql
 *.pyc
+.vscode
 # Logs
 logs
 *.log
