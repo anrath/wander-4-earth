@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String @id @default(uuid())
+  email     String @unique
+  password  String
+  firstName String
+  lastName  String
+  points    Int    @default(0)
+  posts     Post[]
+  tasks     Task[]
+}
+
+model Post {
+  id          String   @id @default(uuid())
+  image       String   @default("")
+  description String   @default("")
+  date        DateTime
+  userId      String?
+  User        User?    @relation(fields: [userId], references: [id])
+}
+
+model Task {
+  id       String @id @default(uuid())
+  points   Int
+  name     String
+  category Type   @default(FOOD)
+  userId   String
+  user     User   @relation(fields: [userId], references: [id])
+}
+
+enum Type {
+  FOOD
+  ENERGY
+  CLASS
+}
