@@ -6,4 +6,4 @@
 - To stop database: `docker-compose stop`
 - To install dependencies: `npm install`
 - To start backend: `npm run dev`
-- Prisma: `npx prisma generate` + `npx prisma studio`
+- Prisma: `npx prisma migrate --preview-feature` + `npx prisma generate` + `npx prisma studio`
