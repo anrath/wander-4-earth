@@ -19,21 +19,21 @@ model User {
 }
 
 model Post {
-  id          String   @id @default(uuid())
-  image       String   @default("")
-  description String   @default("")
-  date        DateTime
+  id          String  @id @default(uuid())
+  image       String  @default("")
+  description String  @default("")
+  date        String  @default("")
   userId      String?
-  User        User?    @relation(fields: [userId], references: [id])
+  User        User?   @relation(fields: [userId], references: [id])
 }
 
 model Task {
-  id       String @id @default(uuid())
+  id       String  @id @default(uuid())
   points   Int
   name     String
-  category Type   @default(FOOD)
-  userId   String
-  user     User   @relation(fields: [userId], references: [id])
+  category Type    @default(FOOD)
+  userId   String?
+  user     User?   @relation(fields: [userId], references: [id])
 }
 
 enum Type {

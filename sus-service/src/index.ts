@@ -3,6 +3,7 @@ import * as cors from 'cors';
 
 import { userRouter } from './routers/user';
 import { postRouter } from './routers/post';
+import { taskRouter } from './routers/task';
 
 const PORT = 3000;
 
@@ -18,6 +19,7 @@ app.use(cors({
 
 app.use('/api/user', userRouter);
 app.use('/api/post', postRouter);
+app.use('/api/task', taskRouter);
 
 app.listen(PORT, async () => {
   console.log(`Ready to receive connections on port ${PORT}!`);
