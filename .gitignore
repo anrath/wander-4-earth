@@ -1,5 +1,6 @@
 earth-client
 tables.txt
+*.sql
 # Logs
 logs
 *.log
