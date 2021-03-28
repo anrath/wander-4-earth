@@ -1,6 +1,7 @@
 earth-client
 tables.txt
 *.sql
+*.pyc
 # Logs
 logs
 *.log
